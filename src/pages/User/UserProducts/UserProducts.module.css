@@ -1,0 +1,9 @@
+.userProductsContent {
+	margin-top: 190px;
+}
+
+@media screen and (min-width: 992px) {
+	.userProductsContent {
+		margin-top: 135px;
+	}
+}

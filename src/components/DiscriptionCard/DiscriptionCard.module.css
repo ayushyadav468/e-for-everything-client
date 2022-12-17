@@ -1,0 +1,188 @@
+.productDiscriptionPage {
+	width: 100%;
+	margin-top: 160px;
+}
+
+/* .productDiscriptionHeading {
+	text-align: center;
+	font-family: 'Playfair Display';
+	font-size: 2.8rem;
+	margin: 1rem 0;
+} */
+
+.productDiscriptionCard {
+	width: 100%;
+	height: auto;
+	background-color: #fcfaea;
+	color: #333;
+	display: flex;
+	flex-direction: column;
+}
+
+.productDiscriptionImageDiv {
+	width: 100%;
+}
+
+.productImage {
+	width: 90%;
+	height: 340px;
+	margin: 0.8rem 5%;
+	object-fit: cover;
+}
+
+.productDiscriptionDiv {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.productName {
+	margin-left: 5%;
+	margin-bottom: 0.5rem;
+	font-size: 1.8rem;
+}
+
+.productDiscription {
+	text-align: justify;
+	margin: 0 5% 0.5rem 5%;
+}
+
+.productPriceAndRatingDiv {
+	width: 90%;
+	margin: 0 5%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.productPrice {
+	font-family: 'Montserrat';
+	font-size: 1.4rem;
+}
+
+.productRating {
+	font-family: 'Montserrat';
+	font-size: 1.2rem;
+}
+
+.quantityBoxAndFavDiv {
+	display: flex;
+	flex-direction: row;
+}
+
+.fav {
+	width: 50px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	background-color: #fcfaea;
+}
+
+.fav svg {
+	width: 26px;
+	height: 26px;
+}
+
+.productBtnDiv {
+	width: 20rem;
+	margin: 0.5rem 5% 1rem 5%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.productBtn {
+	font-size: 1.3rem;
+	border: none;
+	outline: none;
+	padding: 0.4rem 1.2rem;
+	cursor: pointer;
+	border: 3px #ffff00 solid;
+	border-radius: 10px;
+	color: #333113;
+}
+
+.productAddToCartBtn {
+	background-color: #ffff00;
+}
+
+.productAddToCartBtn:hover {
+	background-color: #fff;
+	border-color: #fff;
+	box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.productBuyNowBtn {
+	background-color: #fff;
+}
+
+/* .productBuyNowBtn:hover {
+	background-color: #ffff00;
+	box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.25);
+} */
+
+@media screen and (min-width: 601px) {
+	.productDiscriptionPage {
+		margin-top: 190px;
+	}
+	.productDiscriptionCard {
+		width: 90%;
+		margin: auto;
+	}
+	.productRating {
+		padding: 0.4rem 0;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.productDiscriptionCard {
+		width: 90%;
+		height: 630px;
+		margin: auto;
+		flex-direction: row;
+		box-shadow: 4px 2px 4px 2px rgba(51, 49, 19, 0.35);
+	}
+	.productDiscriptionImageDiv {
+		width: 40%;
+	}
+	.productImage {
+		width: 100%;
+		height: 100%;
+		margin: 0;
+	}
+	.productDiscriptionDiv {
+		width: 60%;
+		margin: 5% 0;
+	}
+	.productName {
+		text-align: left;
+		margin: 0 0 1rem 5%;
+		font-size: 3rem;
+	}
+	.productDiscription {
+		text-align: left;
+		font-size: 1.3rem;
+		line-height: 2.1rem;
+	}
+	.productPriceAndRatingDiv {
+		width: 80%;
+		margin: 0.6rem 5% 0.2rem 5%;
+	}
+	.productPrice {
+		font-size: 2.2rem;
+	}
+	.productPrice strong {
+		font-size: 2.4rem;
+	}
+	.productRating {
+		font-size: 1.6rem;
+	}
+	.productBtnDiv {
+		width: 22rem;
+		margin: 1rem 5% 1rem 5%;
+	}
+	.productBtn {
+		font-size: 1.6rem;
+	}
+}

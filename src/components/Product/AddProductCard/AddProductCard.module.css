@@ -1,0 +1,133 @@
+.addProductCard {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 1rem;
+}
+
+.heading {
+	text-align: center;
+	font-family: 'Playfair Display';
+	font-size: 2.2rem;
+	margin: 1rem 0;
+}
+
+.addProductContainer {
+	width: clamp(310px, 96%, 1000px);
+	margin: auto;
+	padding: 1rem 0.8rem;
+	color: #000;
+	border-radius: 5px;
+	box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.25);
+}
+
+.addProductCardHeading {
+	font-size: 1.4rem;
+	margin-bottom: 1rem;
+}
+
+.addProductForm {
+	display: flex;
+	flex-direction: column;
+}
+
+.nameDiv {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.addProductForm .nameDiv .productLabel,
+.addProductForm .nameDiv .priceLabel {
+	width: 100%;
+}
+
+.addProductForm label {
+	font-size: 1rem;
+	width: 100%;
+	margin-bottom: 0.5rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.addProductForm label > input,
+.addProductForm label > textarea {
+	font-family: 'Playfair Display';
+	min-width: 200px;
+	width: 70%;
+	font-size: 1rem;
+	border: 1px solid black;
+	padding: 0.2rem 0.4rem;
+	border-radius: 5px;
+}
+
+.addProductForm label > textarea {
+	resize: none;
+}
+
+.addProductForm input[type='submit'] {
+	width: min(30%, 200px);
+	margin-top: 1rem;
+	margin-left: auto;
+	font-size: 1.2rem;
+	padding: 0.6rem 0.8rem;
+	background-color: #fff000;
+	box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+	border: none;
+	border-radius: 10px;
+}
+
+.addProductForm input[type='submit']:hover,
+.addProductForm input[type='submit']:focus {
+	background-color: #343114;
+	color: #fff000;
+}
+
+@media screen and (min-width: 712px) {
+	.addProductCardHeading {
+		font-size: 1.8rem;
+		margin-left: 0.5rem;
+	}
+	.addProductForm {
+		width: 95%;
+		margin: auto;
+	}
+	.nameDiv {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.addProductForm .nameDiv .productLabel {
+		width: 50%;
+	}
+	.addProductForm .nameDiv .priceLabel {
+		width: 40%;
+	}
+	.addProductForm .nameDiv label {
+		width: 48%;
+	}
+	.addProductForm label > input {
+		font-size: 1.2rem;
+	}
+	.addProductForm label {
+		width: 100%;
+		font-size: 1.2rem;
+		margin-bottom: 1rem;
+	}
+	.addProductForm label textarea {
+		width: 70%;
+		font-size: 1.2rem;
+	}
+	.addProductForm input[type='submit'] {
+		font-size: 1.4rem;
+	}
+}
+
+@media screen and (min-width: 991px) {
+	.addProductForm .nameDiv .productLabel {
+		width: 60%;
+	}
+	.addProductForm .nameDiv .priceLabel {
+		width: 30%;
+	}
+}

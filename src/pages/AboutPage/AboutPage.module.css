@@ -1,0 +1,45 @@
+.aboutPageContent {
+	margin-top: 200px;
+	margin-bottom: 2rem;
+}
+
+.aboutPageContainer {
+	width: 90%;
+	margin: auto;
+	padding: 1rem 2rem;
+	color: #333133;
+	background-color: #fcfaea;
+	border-radius: 10px;
+}
+
+.heading {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+}
+
+.subHeading {
+	font-size: 1.4rem;
+	margin-bottom: 1rem;
+}
+
+.para {
+	font-size: 1.2rem;
+}
+
+.link {
+	text-decoration: none;
+	color: #000;
+}
+
+@media screen and (min-width: 992px) {
+	.aboutPageContent {
+		margin-top: 200px;
+		margin-bottom: 4rem;
+	}
+}
+
+@media screen and (min-width: 1080px) {
+	.heading {
+		font-size: 3.4rem;
+	}
+}

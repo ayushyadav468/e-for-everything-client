@@ -1,0 +1,189 @@
+.searchBar {
+	width: 100%;
+	margin: 0.2rem auto;
+	padding: 0.4rem;
+	display: grid;
+	grid-template-columns: 30% auto 25% 10% 10%;
+	grid-template-rows: 50px 40px;
+}
+
+.searchBar li a {
+	color: black;
+}
+
+.logo {
+	font-size: 2rem;
+	font-weight: 600;
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	align-self: center;
+}
+
+.searchFormContainer {
+	grid-column-start: 1;
+	grid-column-end: 6;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	place-self: center stretch;
+}
+
+.searchFormContainer .searchForm {
+	width: 100%;
+	border: 1px solid black;
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+}
+
+.searchBarContainer .searchForm:focus-within {
+	border: none;
+}
+
+.searchForm input[type='text'] {
+	width: 90%;
+	font-size: 1.2rem;
+	font-family: 'PlayFair Display';
+	padding: 0.2rem 0.6rem;
+	border-radius: 5px 0 0 5px;
+	border: none;
+	outline: none;
+}
+
+/* .searchForm input:focus {
+	border: 2px solid #ffff00;
+	border-right: none;
+} */
+
+.searchForm .searchFormButton {
+	width: 15%;
+	background-color: #333113;
+	border: 1px solid #333113;
+	color: #fcfaea;
+	padding: 0.4rem 0.8rem;
+	border-radius: 0 3px 3px 0;
+	border: none;
+	outline: none;
+}
+
+.searchBar .searchFormButton .searchFormSvg {
+	width: 20px;
+	height: 20px;
+	align-self: center;
+}
+
+.signIn {
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	place-self: center;
+	font-size: 1rem;
+	position: relative;
+}
+
+.signInContent {
+	display: none;
+	position: absolute;
+	z-index: 10;
+	border-radius: 5px 5px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	background-color: #fff;
+}
+
+.signInContent a {
+	font-size: 0.9rem;
+	display: block;
+	width: 8rem;
+	border-radius: 5px 5px;
+	padding: 1rem;
+	text-align: center;
+}
+
+.logOutButton {
+	font-family: 'Playfair Display';
+	color: #333113;
+	background-color: #fff000;
+	width: 8rem;
+	font-size: 0.9rem;
+	display: block;
+	padding: 1rem;
+	border-radius: 4px 4px;
+	font-weight: 700;
+	text-align: center;
+	border: none;
+}
+
+.signInContent a:hover,
+.logOutButton:hover {
+	color: #fff;
+	background-color: #333113;
+}
+
+.signInDiv:hover .signInContent {
+	display: block;
+}
+
+.fav {
+	grid-column-start: 4;
+	grid-column-end: 5;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	place-self: center;
+}
+
+.cart {
+	grid-column-start: 5;
+	grid-column-end: 6;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	justify-self: end;
+	align-self: center;
+}
+
+.fav,
+.cart {
+	width: 27px;
+	height: 27px;
+}
+
+.fav svg,
+.cart svg {
+	width: 25px;
+	height: 25px;
+}
+
+@media screen and (min-width: 601px) {
+	.searchBar {
+		width: 90%;
+	}
+	.searchFormContainer {
+		width: 90%;
+		max-width: 600px;
+		align-self: center;
+		justify-self: center;
+	}
+	.searchForm form {
+		width: 90%;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.searchBar {
+		grid-template-columns: 15% auto 15% 5% 5%;
+		grid-template-rows: 50px;
+	}
+	.searchFormContainer {
+		grid-column-start: 2;
+		grid-column-end: 3;
+		grid-row-start: 1;
+		grid-row-end: 2;
+	}
+	.signIn {
+		font-size: 1.2rem;
+	}
+	.signInContent a {
+		font-size: 1rem;
+	}
+}

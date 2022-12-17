@@ -1,0 +1,30 @@
+.cartCardsDiv {
+	width: 100%;
+	margin-top: 190px;
+	display: flex;
+	flex-direction: column;
+}
+
+.emptyCartCardPara {
+	text-align: center;
+	font-size: 2rem;
+	margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 992px) {
+	.cartCardsDiv {
+		margin-top: 160px;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.emptyCartCardPara {
+		margin: auto;
+	}
+}
+
+@media screen and (min-width: 1080px) {
+	.cartCardsDiv {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+}
