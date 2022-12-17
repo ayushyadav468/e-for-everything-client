@@ -1,8 +1,8 @@
+import { useEffect, useState } from 'react';
 import axios from '../../../axiosInstance';
-import { useState, useEffect } from 'react';
 import Spinner from '../../UI/Spinner/Spinner';
-import styles from './ProductCards.module.css';
 import ProductCard from './ProductCard/ProductCard';
+import styles from './ProductCards.module.css';
 
 const ProductCards = ({ search }) => {
 	const [isLoading, setIsLoading] = useState(true);
@@ -13,7 +13,7 @@ const ProductCards = ({ search }) => {
 		const result = await axios({
 			method: 'GET',
 			url: '/api/product',
-			headers: { 'content-type': 'application/json' },
+			headers: { 'content-type': 'application/json' }
 		})
 			.then((response) => {
 				if (response.status === 200) {
@@ -23,7 +23,7 @@ const ProductCards = ({ search }) => {
 				}
 			})
 			.catch((error) => {
-				console.log(error.response.data?.error.message);
+				console.log(error.response?.data?.error?.message);
 			});
 		setIsLoading(false);
 		return result;

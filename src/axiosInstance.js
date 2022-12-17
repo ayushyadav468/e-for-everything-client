@@ -12,7 +12,7 @@ const configs = {
 };
 
 const instance = axios.create({
-	baseURL: `${configs[process.env.NODE_ENV].SERVER_URI}`
+	baseURL: 'https://e-for-everything-server.vercel.app/'
 });
 
 export default instance;
